@@ -7,7 +7,7 @@
 >PM2.5 from wildfire smoke is associated with premature deaths in the general population, and can cause and exacerbate diseases of the lungs, heart, brain/nervous system, skin, gut, kidney, eyes, nose and liver. It has also been shown to lead to cognitive impairment and memory loss. Firefighters and emergency response workers are also greatly impacted by injuries, burns and smoke inhalation, particularly at high concentrations.
 > --- [WHO](https://www.who.int/health-topics/wildfires#tab=tab_2)
 
-The goal of this project is to predict the longevity of PM2.5, particulate matter most associated with wildfires (with diameters 2.5 micrometers or smaller). We will look at weather station and air quality monitors around the San Francisco metro area from 2018 to 2019.
+The goal of this project is to predict the longevity of PM2.5, particulate matter most associated with wildfires (with diameters 2.5 micrometers or smaller). We will look at weather station and air quality monitors around the San Francisco metro area from 2018 to 2019, and model on a time series regression problem.
 
 ## Data
 
