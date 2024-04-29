@@ -23,29 +23,29 @@ The Automated Surface Observing System (ASOS) is considered to be the flagship a
 
 1. [data_wrangling.ipynb](https://github.com/UnacceptableVegetable/SpringBoard/blob/main/Capstone%20Two/data_wrangling.ipynb)
 
-Data Wrangling: time series data from the CDC and ASOS is merged to form datasets with explanatory variables in weather and a response variable in PM2.5. Highlights include:
+    Data Wrangling: time series data from the CDC and ASOS is merged to form datasets with explanatory variables in weather and a response variable in PM2.5. Highlights include:
 
-- Missing data analysis
-- geopandas
-- Inner merge
+    - Missing data analysis
+    - geopandas
+    - Inner merge
 
 2. [eda.ipynb](https://github.com/UnacceptableVegetable/SpringBoard/blob/main/Capstone%20Two/eda.ipynb)
 
-Exploratory Data Analysis: the newly merged dataframe is analyzed for important features. Highlights include:
+    Exploratory Data Analysis: the newly merged dataframe is analyzed for important features. Highlights include:
 
-- Correlation table
+    - Correlation table
 
 3. [preprocessing.ipynb](https://github.com/UnacceptableVegetable/SpringBoard/blob/main/Capstone%20Two/preprocessing.ipynb)
 
-Preprocessing: the time series data is experimented on how it can be implemented into a regression analysis framework. Highlights include:
+    Preprocessing: the time series data is experimented on how it can be implemented into a regression analysis framework. Highlights include:
 
-- Time series cross-validation
-- Scaling
-- One hot encoding
+    - Time series cross-validation
+    - Scaling
+    - One hot encoding
 
 4. [modeling.ipynb](https://github.com/UnacceptableVegetable/SpringBoard/blob/main/Capstone%20Two/modeling.ipynb)
 
-Modeling: 4 models LSTM, Linear regression, Ridge regression, and Lasso regression are compared using RMSE. 
+    Modeling: 4 models LSTM, Linear regression, Ridge regression, and Lasso regression are compared using RMSE. 
 
 
 ## Model Metrics
