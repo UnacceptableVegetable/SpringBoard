@@ -1,0 +1,33 @@
+Features: ['lon', 'lat', 'tmpf', 'relh', 'drct', 'sped']
+Label: 'DS_PM_pred'
+
+Linear Regression:
+MinMaxScaler(feature_range=(0, 1))
+scoring='neg_root_mean_squared_error'
+cv=TimeSeriesSplit(n_splits=8)
+
+Ridge Regression:
+MinMaxScaler(feature_range=(0, 1))
+'ridge__alpha':[0.001, 0.01, 0.1, 0, 1, 10]
+scoring='neg_root_mean_squared_error'
+cv=TimeSeriesSplit(n_splits=8)
+
+Lasso Regression:
+MinMaxScaler(feature_range=(0, 1))
+'lasso__alpha':[0.001, 0.01, 0.1, 0, 1, 10]
+scoring='neg_root_mean_squared_error',
+cv=TimeSeriesSplit(n_splits=8)
+
+LSTM:
+model = Sequential()
+model.add(LSTM(50, input_shape=(train_X.shape[1], train_X.shape[2])))
+model.add(Dense(1))
+model.compile(loss='mae', optimizer='adam')
+epochs=40
+batch_size=72
+
+Performance (RMSE):
+LSTM: 0.707
+linear regression: 9.340
+ridge regression: 9.340
+lasso regression: 8.583
