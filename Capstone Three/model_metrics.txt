@@ -1,0 +1,19 @@
+Features: ['Company', 'Product' ,'Sub-product', 'Consumer complaint narrative']
+Label: 'Timely response?'
+
+Performance (AUC):
+DecisionTreeClassifier: 0.5478
+RandomForestClassifier: 0.7728
+LogisticRegression: 0.7997
+
+
+Class Weight Balanced Models
+RandomForestClassifier: 0.8083
+LogisticRegression: 0.8524
+
+Grid Search LogisticRegression: 0.8469
+param_grid = {
+    'logisticregression__C': [0.1, 1.0, 10.0],
+    'logisticregression__solver': ['liblinear', 'lbfgs']
+}
+grid_search_lr = GridSearchCV(pipeline_lr, param_grid, cv=5, scoring='roc_auc')
